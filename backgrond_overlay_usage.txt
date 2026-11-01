@@ -1,0 +1,8 @@
+Use `make_colour.py` to make the colour bg 
+
+convert_folder_multiply.py uses multiply mode 
+
+convert_folder_overlay.py uses an rgba overlay inspired method 
+
+all of them use images from 1101232530, which is known to be good 
+

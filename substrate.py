@@ -1,11 +1,11 @@
 CHOSEN_PALETTE = "paleamethyst" 
-speed_int = 3
-TARGET_FPS = 120 
+speed_int = 10
+TARGET_FPS = 12 
 CRACK_COL = (125, 137, 159, 85) #(0, 0, 0, 85)
 
 import os
 import datetime
-savedir = datetime.datetime.now().strftime("%H%M%S") 
+savedir = datetime.datetime.now().strftime("%m%d%H%M%S") 
 os.makedirs(savedir) 
 ssid = 0 
 
@@ -22,8 +22,8 @@ import math
 import random 
 PI = math.pi 
 
-WIDTH = dimx = 1000;
-HEIGHT = dimy = 500;
+WIDTH = dimx = 2000;
+HEIGHT = dimy = 2000;
 num = 0;
 maxnum = 100;
 
@@ -77,7 +77,7 @@ def begin() :
   occupied = [] 
   
   # make random crack seeds
-  for k in range(16): 
+  for k in range(90): 
     i = random.randrange(dimx*dimy-1)
     y = i//dimx
     x = i%dimx 
@@ -87,7 +87,7 @@ def begin() :
 
   # make just three cracks
   num=0
-  for _ in range(3): 
+  for _ in range(90): 
     makeCrack()
   
   screen.fill((255,255,255, 255))
